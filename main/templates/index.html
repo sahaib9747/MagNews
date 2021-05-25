@@ -2198,25 +2198,25 @@
 							Latest Articles
 						</h3>
 					</div>
-
 					<div class="row p-t-35">
+					{% for news in request.news%}
 						<div class="col-sm-6 p-r-25 p-r-15-sr991">
 							<!-- Item latest -->	
 							<div class="m-b-45">
-								<a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
+								<a href="{% url 'news' %}" class="wrap-pic-w hov1 trans-03">
 									<img src="{% static 'front/images/latest-01.jpg' %}" alt="IMG">
 								</a>
 
 								<div class="p-t-16">
 									<h5 class="p-b-5">
-										<a href="blog-detail-01.html" class="f1-m-3 cl2 hov-cl10 trans-03">
-											You wish lorem ipsum dolor sit amet consectetur 
+										<a href="{% url 'news' %}" class="f1-m-3 cl2 hov-cl10 trans-03">
+											{{news.title}}
 										</a>
 									</h5>
-
+									<p>{{news.short_summary}}</p>
 									<span class="cl8">
 										<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
-											by John Alvarado
+											{{news.writer}}
 										</a>
 
 										<span class="f1-s-3 m-rl-3">
@@ -2224,167 +2224,13 @@
 										</span>
 
 										<span class="f1-s-3">
-											Feb 18
+											{{news.date}}
 										</span>
 									</span>
 								</div>
 							</div>
 						</div>
-
-						<div class="col-sm-6 p-r-25 p-r-15-sr991">
-							<!-- Item latest -->	
-							<div class="m-b-45">
-								<a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-									<img src="{% static 'front/images/latest-02.jpg' %}" alt="IMG">
-								</a>
-
-								<div class="p-t-16">
-									<h5 class="p-b-5">
-										<a href="blog-detail-01.html" class="f1-m-3 cl2 hov-cl10 trans-03">
-											You wish lorem ipsum dolor sit amet consectetur 
-										</a>
-									</h5>
-
-									<span class="cl8">
-										<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
-											by John Alvarado
-										</a>
-
-										<span class="f1-s-3 m-rl-3">
-											-
-										</span>
-
-										<span class="f1-s-3">
-											Feb 16
-										</span>
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 p-r-25 p-r-15-sr991">
-							<!-- Item latest -->	
-							<div class="m-b-45">
-								<a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-									<img src="{% static 'front/images/latest-03.jpg' %}" alt="IMG">
-								</a>
-
-								<div class="p-t-16">
-									<h5 class="p-b-5">
-										<a href="blog-detail-01.html" class="f1-m-3 cl2 hov-cl10 trans-03">
-											You wish lorem ipsum dolor sit amet consectetur 
-										</a>
-									</h5>
-
-									<span class="cl8">
-										<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
-											by John Alvarado
-										</a>
-
-										<span class="f1-s-3 m-rl-3">
-											-
-										</span>
-
-										<span class="f1-s-3">
-											Feb 15
-										</span>
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 p-r-25 p-r-15-sr991">
-							<!-- Item latest -->	
-							<div class="m-b-45">
-								<a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-									<img src="{% static 'front/images/latest-04.jpg' %}" alt="IMG">
-								</a>
-
-								<div class="p-t-16">
-									<h5 class="p-b-5">
-										<a href="blog-detail-01.html" class="f1-m-3 cl2 hov-cl10 trans-03">
-											You wish lorem ipsum dolor sit amet consectetur 
-										</a>
-									</h5>
-
-									<span class="cl8">
-										<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
-											by John Alvarado
-										</a>
-
-										<span class="f1-s-3 m-rl-3">
-											-
-										</span>
-
-										<span class="f1-s-3">
-											Feb 13
-										</span>
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 p-r-25 p-r-15-sr991">
-							<!-- Item latest -->	
-							<div class="m-b-45">
-								<a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-									<img src="{% static 'front/images/latest-05.jpg' %}" alt="IMG">
-								</a>
-
-								<div class="p-t-16">
-									<h5 class="p-b-5">
-										<a href="blog-detail-01.html" class="f1-m-3 cl2 hov-cl10 trans-03">
-											You wish lorem ipsum dolor sit amet consectetur 
-										</a>
-									</h5>
-
-									<span class="cl8">
-										<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
-											by John Alvarado
-										</a>
-
-										<span class="f1-s-3 m-rl-3">
-											-
-										</span>
-
-										<span class="f1-s-3">
-											Feb 10
-										</span>
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 p-r-25 p-r-15-sr991">
-							<!-- Item latest -->	
-							<div class="m-b-45">
-								<a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-									<img src="{% static 'front/images/latest-06.jpg' %}" alt="IMG">
-								</a>
-
-								<div class="p-t-16">
-									<h5 class="p-b-5">
-										<a href="blog-detail-01.html" class="f1-m-3 cl2 hov-cl10 trans-03">
-											You wish lorem ipsum dolor sit amet consectetur 
-										</a>
-									</h5>
-
-									<span class="cl8">
-										<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
-											by John Alvarado
-										</a>
-
-										<span class="f1-s-3 m-rl-3">
-											-
-										</span>
-
-										<span class="f1-s-3">
-											Feb 09
-										</span>
-									</span>
-								</div>
-							</div>
-						</div>
+					{% endfor %}
 					</div>
 				</div>
 
