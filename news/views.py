@@ -4,6 +4,6 @@ from .models import News
 
 # Create your views here.
 
-def news(request, pk):
-    request.news = News.objects.filter(pk=pk)
+def news(request, word):
+    request.news = News.objects.filter(title=word)
     return render(request, 'news.html')

@@ -2203,13 +2203,13 @@
 						<div class="col-sm-6 p-r-25 p-r-15-sr991">
 							<!-- Item latest -->	
 							<div class="m-b-45">
-								<a href="{% url 'news' pk=news.pk%}" class="wrap-pic-w hov1 trans-03">
+								<a href="{% url 'news' word=news.title %}" class="wrap-pic-w hov1 trans-03">
 									<img src="{% static 'front/images/latest-01.jpg' %}" alt="IMG">
 								</a>
 
 								<div class="p-t-16">
 									<h5 class="p-b-5">
-										<a href="{% url 'news' pk=news.pk %}" class="f1-m-3 cl2 hov-cl10 trans-03">
+										<a href="{% url 'news' word=news.title %}" class="f1-m-3 cl2 hov-cl10 trans-03">
 											{{news.title}}
 										</a>
 									</h5>

@@ -3,5 +3,5 @@ from . import views
 from django.conf.urls import url
 
 urlpatterns = [
-    path('news/<int:pk>', views.news, name='news'),
+    re_path(r'news/(?P<word>.*)/$', views.news, name='news'),
 ]
