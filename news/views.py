@@ -6,4 +6,4 @@ from .models import News
 
 def news(request, word):
     request.news = News.objects.filter(title=word)
-    return render(request, 'news.html')
+    return render(request, 'front/news.html')

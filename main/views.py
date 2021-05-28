@@ -8,13 +8,17 @@ def home(request):
     request.page = Appearence.objects.get(title__startswith='Home')
     request.news = News.objects.all()
 
-    return render(request, 'index.html')
+    return render(request, 'front/index.html')
 
 def about(request):
     request.page = Appearence.objects.get(title__startswith='About')
 
-    return render(request, 'about.html')
+    return render(request, 'front/about.html')
 
 
 def base(request):
-    return render(request, 'base.html')
+    return render(request, 'front/base.html')
+
+
+def panel(request):
+    return render(request, 'back/index.html')
