@@ -7,3 +7,8 @@ from .models import News
 def news(request, word):
     request.news = News.objects.filter(title=word)
     return render(request, 'front/news.html')
+
+
+def news_list(request):
+
+    return render(request, 'back/news_list.html')
