@@ -10,5 +10,6 @@ def news(request, word):
 
 
 def news_list(request):
+    request.news = News.objects.all()
 
     return render(request, 'back/news_list.html')
