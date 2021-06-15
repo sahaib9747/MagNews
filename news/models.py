@@ -8,7 +8,7 @@ class News(models.Model):
     title = TextField(default='News Title')
     short_summary = TextField(default='This is news short summary')
     deatils = TextField(default='News deatils')
-    write = TextField(default='write name')
+    writer = TextField(default='write name')
     date = TextField(default='date')
 
     def __str__(self):
